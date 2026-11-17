@@ -22,6 +22,6 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(Google_Benchmark)
 
-add_executable(pool_bench bench/bench_main.cpp)
-target_include_directories(pool_bench PRIVATE include/)
-target_link_libraries(pool_bench PRIVATE benchmark::benchmark_main)
+add_executable(bench_malloc_v0 bench/bench_malloc.cpp)
+target_include_directories(bench_malloc_v0 PRIVATE include/)
+target_link_libraries(bench_malloc_v0 PRIVATE benchmark::benchmark_main)
